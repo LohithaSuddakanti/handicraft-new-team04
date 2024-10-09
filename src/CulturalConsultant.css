@@ -1,0 +1,32 @@
+.dashboard-container {
+  padding: 20px;
+  background-color: #f3e7e9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #8b0000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-box p {
+  margin: 0;
+}

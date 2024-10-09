@@ -1,0 +1,89 @@
+/* Ensure full height and proper alignment */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Header section */
+.dashboard-header {
+    width: 100%;
+    background-color: #4CAF50; /* Green header */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info section */
+.info-section {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Details styling */
+.info-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.info-value {
+    color: #777;
+}
+
+/* Cards for sold items */
+.sold-items-section {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.sold-item-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sold-item-card h3 {
+    margin-bottom: 10px;
+}
+
+.sold-item-card p {
+    color: #777;
+}
+

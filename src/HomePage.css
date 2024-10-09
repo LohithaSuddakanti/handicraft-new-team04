@@ -1,0 +1,67 @@
+/* HomePage.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the body and html take up full height */
+    font-family: Arial, sans-serif;
+}
+
+.homepage-container {
+    background-image: url('./assets/photo_6339313596969894286_y.jpg'); /* Ensure this is the correct single image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* For overlay effect */
+}
+
+/* Optional overlay effect for text visibility */
+.homepage-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0; /* Behind content */
+}
+
+.content {
+    position: relative; /* Content above overlay */
+    z-index: 1; /* Bring content above overlay */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    color: #ffffff; /* Slightly off-white color */
+    font-size: 36px; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.buttons {
+    margin-top: 20px; /* Space between heading and buttons */
+}
+
+.btn {
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Button background */
+    padding: 12px 30px; /* Uniform padding */
+    margin: 10px; /* Margin between buttons */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Block display for button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    min-width: 150px; /* Ensures both buttons have the same minimum width */
+    text-align: center; /* Center text in buttons */
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
